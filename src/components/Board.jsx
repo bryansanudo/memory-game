@@ -98,12 +98,12 @@ const Board = () => {
         <div className="fixed inset-0 bg-black opacity-50 z-10"></div>
       )}
 
-      <div className="relative h-screen flex items-center ">
-        <div className="mx-auto flex flex-col justify-center items-center">
+      <div className="relative h-screen flex items-center  ">
+        <div className="mx-auto flex flex-col justify-center items-center w-full max-w-5xl ">
           <h1 className="font-bold text-4xl my-8 text-center text-transparent bg-clip-text  bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:text-5xl  ">
             Memory Game
           </h1>
-          <div className="grid grid-cols-4 justify-center items-center px-3 py-5 my-3">
+          <div className="grid grid-cols-4 justify-center items-center gap-5  my-6">
             {cards.map((card) => (
               <Card
                 card={card}
@@ -113,7 +113,7 @@ const Board = () => {
             ))}
           </div>
           <button
-            className="bg-black font-semibold text-white rounded-md px-5 py-1 hover:bg-yellow-500 hover:text-black transition-all mb-3"
+            className="bg-black font-semibold text-white rounded-md px-5 py-1 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 transition duration-500 ease-in-out hover:text-black  mb-3"
             onClick={handleNewGame}
           >
             Nuevo Juego
