@@ -101,7 +101,7 @@ const Board = () => {
       <div className="relative h-screen flex items-center  ">
         <div className="mx-auto flex flex-col justify-center items-center w-full max-w-5xl ">
           <h1 className="font-bold text-4xl my-8 text-center text-transparent bg-clip-text  bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 md:text-5xl  ">
-            Memory Game
+            Memory App
           </h1>
           <div className="grid grid-cols-4 justify-center items-center gap-5  my-6">
             {cards.map((card) => (

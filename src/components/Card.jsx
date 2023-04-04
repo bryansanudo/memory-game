@@ -3,7 +3,7 @@ import React from "react";
 const Card = ({ card, handleCardClick }) => {
   return (
     <div
-      className={`drop-shadow-md flex items-center ${
+      className={`shadow-md shadow-gray-600 flex items-center ${
         card.flipped ? "[transform:rotateY(10deg)]" : "bg-white"
       } justify-center cursor-pointer md:h-24 md:w-24 h-14 w-14 hover:scale-105 rounded-xl transition-all duration-1000`}
       onClick={() => handleCardClick(card.id)}
